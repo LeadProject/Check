@@ -1,0 +1,63 @@
+<html>
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>
+
+        IP Logger
+
+    </title>
+
+</head>
+
+
+
+<body style="margin : 30px 30px 30px 30px;">
+
+    <center>
+
+        <h1>
+
+            <b>당신의 아이피를 꿀꺽하였습니다!</b><br>
+
+        </h1>
+
+        <h2>
+
+            <hr>
+
+            <?php
+
+                $ip = $_SERVER["REMOTE_ADDR"];
+
+                $fp = fopen("IpLog.txt", 'a');
+
+                fwrite($fp, "\n".$ip);
+
+                fclose($fp);
+
+                echo "<p>너님의 IP : ".$ip."</p>";
+
+            ?>
+
+        </h2>
+
+        <hr>
+
+        <h5>
+
+            아이피
+
+        </h5>
+
+    </center>
+
+</body>
+
+
+
+</html>
