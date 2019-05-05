@@ -1,0 +1,18 @@
+HexaMonster:
+    39.123.225.51: HexaRPG
+    127.0.0.1: localhost
+
+Achievement:
+  127.0.0.1: localhost
+
+Stat:
+  127.0.0.1: localhost
+
+HexaGuild:
+  127.0.0.1: localhost
+
+PostBox:
+   127.0.0.1: localhost
+
+BattleGround:
+   127.0.0.1: localhost
